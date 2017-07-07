@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+</head>
+<body>
+	<ul id = "ul1">
+		
+	</ul>
+	<script>
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4) {
+				var obj = JSON.pares(xhr.responseText);
+				var objArr = obj.records;
+				var ul = document.getElementById('ul1');
+				for(var i = 0;i< objArr.length;i++){
+					var li = document.createElement('li');
+					li.innerHTML = "<p>"+objArr[i].Name+"<p>";
+					ul.appendChild(li);
+				}
+			}
+		}
+		xhr.open('get','data/data.php?type = list');
+		xhr.send(null);
+	</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+	<title>JDProject</title>
+</head>
+<body>
+	<div class="jd_container">
+		<header class ="jd_header_box">
+			<div class = "jd_box">
+				<a href="#" class = "jd_logo"></a>
+				<form action="">
+					<span class= "jd_search"></span>
+					<input type="text" placeholdser="请输入商品名称">
+				</form>
+				<a href="#" class= "jd_login">登陆</a>
+			</div>	
+		</header>
+		<div class="jd_banner swiper-container">
+			<ul class="image_box swiper-wrapper">
+			
+				<li class="swiper-slide"><a href="#"><img src="image/1.jpg" alt=""></a></li>
+				<li class="swiper-slide"><a href="#"><img src="image/2.jpg" alt=""></a></li>
+				<li class="swiper-slide"><a href="#"><img src="image/3.jpg" alt=""></a></li>
+				<li class="swiper-slide"><a href="#"><img src="image/4.jpg" alt=""></a></li>
+				<li class="swiper-slide"><a href="#"><img src="image/5.jpg" alt=""></a></li>
+				<li class="swiper-slide"><a href="#"><img src="image/6.jpg" alt=""></a></li>
+				<li class="swiper-slide"><a href="#"><img src="image/7.jpg" alt=""></a></li>
+				<li class="swiper-slide"><a href="#"><img src="image/8.jpg" alt=""></a></li>
+					
+			</ul>
+			<!-- <ul class="point_box ">
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+			</ul> -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<nav class= "jd_nav">
+			<div class = "first">
+				<div>
+					<img src="image/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="image/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="image/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="image/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+			</div>
+			<div class  ="sencond">
+				<div>
+					<img src="image/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="image/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="image/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="image/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+			</div>
+		</nav>
+		<main class = "jd_product">
+			<section class="jd_fproduct_box">
+				<div class="jd_main_title jd_no_bottom">
+				
+					<span class="jd_clock"></span>
+					<span class = "jd_text">掌上秒杀</span>
+					<div class  ="jd_time">
+						<span>0</span>
+						<span>0</span>
+						<span class="buling">:</span>
+						<span>0</span>
+						<span>0</span>
+						<span class="buling">:</span>
+						<span>0</span>
+						<span>0</span>
+					</div>
+					<div class ="jd_more">更多>></div>
+				</div>
+				<div class="jd_main_con">
+					<ul class ="jd_main_ul">
+						<li>
+							<a href=""><img src="image/p1.jpg" alt=""></a>
+							<p>&yen;10</p>
+							<p>&yen;100</p>
+						</li>
+						<li>
+							<a href=""><img src="image/p1.jpg" alt=""></a>
+							<p>&yen;10</p>
+							<p>&yen;100</p>
+						</li>
+						<li>
+							<a href=""><img src="image/p1.jpg" alt=""></a>
+							<p>&yen;10</p>
+							<p>&yen;100</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="jd_main_title">京东超市</div>
+				<div class="jd_main_con clear_float">
+					<a href=""><img src="image/pf1.jpg"  alt="" class="w_50 b_right f_left"></a>
+					<a href=""><img src="image/pf2.jpg" alt="" class="w_50 f_right b_bottom"></a>
+					<a href=""><img src="image/pf3.jpg" alt="" class="w_50 f_right"></a>
+				</div>
+			</section>
+			<section>
+				<div class="jd_main_title">京东超市</div>
+				<div class="jd_main_con clear_float">
+					<a href=""><img src="image/pf1.jpg" alt="" class="w_50 f_right b_left"></a>
+					<a href=""><img src="image/pf2.jpg" alt="" class="w_50 f_left b_bottom"></a>
+					<a href=""><img src="image/pf3.jpg" alt="" class="w_50 f_left"></a>
+				</div>
+			</section>
+			<section>
+				<div class="jd_main_title">京东超市</div>
+				<div class="jd_main_con clear_float">
+					<a href=""><img src="image/pf1.jpg"  alt="" class="w_50 b_right f_left"></a>
+					<a href=""><img src="image/pf2.jpg" alt="" class="w_50 f_right b_bottom"></a>
+					<a href=""><img src="image/pf3.jpg" alt="" class="w_50 f_right"></a>
+				</div>
+			</section>
+
+		</main>
+	</div>
+</body>
+ <script>
+
+ 	var swiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+		autoplay: 1000,
+		loop:true,
+		autoplayDisableOnInteraction:false
+    });
+    
+    </script>
+</html>
